@@ -4,6 +4,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App'
 import routerConfig from './router.config.js'
+import '../node_modules/animate.css/animate.css'
 
 Vue.use(VueRouter)
 const router = new VueRouter(routerConfig)
