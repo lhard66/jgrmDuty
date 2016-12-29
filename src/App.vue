@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <transition enter-active-class="animated zoomIn" leave-active-class="animated zoomOut">
+    <transition enter-active-class="animated fadeInRightBig" leave-active-class="hide">
       <router-view></router-view>
     </transition>
   </div>
@@ -13,5 +13,7 @@ export default {
 </script>
 
 <style>
-
+  .hide{
+    display: none;
+  }
 </style>
