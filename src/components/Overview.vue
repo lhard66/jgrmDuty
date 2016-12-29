@@ -40,14 +40,15 @@
   width: 70px;
   height: 30px;
   float: left;
+  cursor: default;
 }
 #app .panel-body>span{
 }
 #app .panel-body>div>i{
+  display: none;
   top: -5px;
   right: 10px;
   color: #D84A4A;
   cursor: pointer;
-
 }
 </style>

@@ -1,6 +1,7 @@
 import Overview from './components/Overview.vue'
 import AddMember from './components/AddMember.vue'
-import Hello from './components/Hello.vue'
+//定义懒加载方式
+const Hello = resolve => require(['./components/Hello.vue'], resolve)
 
 export default {
   routes: [
