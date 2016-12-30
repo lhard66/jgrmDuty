@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>值日预览{{count}}{{data.length}}</h3>
+    <h3>值日预览{{count}}</h3>
     <div class="panel panel-default" v-for="item in ['一','二']">
       <div class="panel-heading">周{{item}}
         <div class="dropdown">
@@ -73,14 +73,4 @@ export default {
   color: #D84A4A;
   cursor: pointer;
 }
-
-
-/*.label-item{
-  >.remove{
-    display:none;
-  }
-  &:hover .remove{
-    display:block;
-  }
-}*/
 </style>
