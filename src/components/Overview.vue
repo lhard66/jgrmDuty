@@ -13,59 +13,66 @@
       <div class="panel-body">
         <div class="label-item" v-for="item in [1,2,3,4,5,6]">
           <span class="label label-primary">刘天青</span>
-          <i class="glyphicon glyphicon-remove remove" ></i>
+          <i class="glyphicon glyphicon-remove remove"></i>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
-  export default{
-    data:function(){
-      return {
-        msg:'abc'
-      }
-    },
-    methods:{
-
+export default {
+  data: function() {
+    return {
+      msg: 'abc'
     }
-  }
-</script>
+  },
+  methods: {
 
+  }
+}
+</script>
 <style>
 /*bootstrap 部分*/
-.panel-heading{
+
+.panel-heading {
   padding: 5px 15px;
 }
-.dropdown{
+
+.dropdown {
   display: inline-block;
   top: 1px;
   left: 95px;
 }
-.panel{
+
+.panel {
   width: 245px;
   height: 150px;
   float: left;
   margin-right: 10px;
 }
+
+
 /*自定义部分*/
-.label-item{
+
+.label-item {
   width: 70px;
   height: 30px;
   float: left;
   cursor: default;
 }
-.label-item：hover{
+
+.label-item:hover {
   color: red;
 }
-.label-item>i{
+
+.label-item>i {
   display: none;
   top: -5px;
   right: 10px;
   color: #D84A4A;
   cursor: pointer;
 }
+
 
 /*.label-item{
   >.remove{
