@@ -13,7 +13,7 @@
       <div class="panel-body">
         <div class="label-item" v-for="item in [1,2,3,4,5,6]">
           <span class="label label-primary">刘天青</span>
-          <i class="glyphicon glyphicon-remove remove"></i>
+          <i class="glyphicon glyphicon-remove"></i>
         </div>
       </div>
     </div>
@@ -61,14 +61,15 @@ export default {
   cursor: default;
 }
 
-.label-item:hover {
-  color: red;
+.label-item:hover i {
+  display: block;
 }
 
 .label-item>i {
   display: none;
-  top: -5px;
-  right: 10px;
+  position: relative;
+  top: -25px;
+  right: -45px;
   color: #D84A4A;
   cursor: pointer;
 }
