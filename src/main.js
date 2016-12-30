@@ -4,9 +4,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App'
 import routerConfig from './router.config.js'
-import '../node_modules/animate.css/animate.css'
+import 'animate.css'
+import VueResource from 'vue-resource'
 
 Vue.use(VueRouter)
+Vue.use(VueResource)
 const router = new VueRouter(routerConfig)
 new Vue({
   el: '#app',

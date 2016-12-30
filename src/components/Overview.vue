@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>值日预览{{msg}}</h3>
+    <h3>值日预览</h3>
     <div class="panel panel-default" v-for="item in ['一','二','三','四','五','六']">
       <div class="panel-heading">周{{item}}
         <div class="dropdown">
@@ -21,13 +21,14 @@
 </template>
 <script>
 export default {
-  data: function() {
+  data() {
+    //通过ajax拿到假数据
+    this.$http.get('/static/data.json').then((response) => {
+      console.log(response)
+    })
     return {
-      msg: 'abc'
+      msg: 123
     }
-  },
-  methods: {
-
   }
 }
 </script>

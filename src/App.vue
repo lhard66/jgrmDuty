@@ -19,7 +19,6 @@
 <script>
 import '../node_modules/animate.css/animate.css'
 export default {
-  //将li变为循环添加
   data() {
     return {
       list: [{

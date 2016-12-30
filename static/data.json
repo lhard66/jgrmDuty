@@ -1,12 +1,12 @@
 {
-  "Mon": [{
+  "Monday": [{
     "id": 1,
     "name": "张三"
   }, {
     "id": 2,
     "name": "李四"
   }],
-  "Tue": [{
+  "Tuesday": [{
     "id": 3,
     "name": "王五"
   }]
